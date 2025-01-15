@@ -1,0 +1,110 @@
+title Wunsz
+author OmumbOrOmbOngO
+homepage www.puzzlescript.net
+
+verbose_logging
+
+========
+OBJECTS
+========
+
+Background
+green
+
+Wall
+brown
+
+Player
+black
+
+Tail
+blue
+
+Apple
+red
+
+Exit
+yellow
+
+Blockade
+darkblue
+
+=======
+LEGEND
+=======
+
+. = Background
+# = Wall
+P = Player
+T = Tail
+O = Apple
+B = Blockade
+X = Exit
+& = Blockade and Exit
+
+=======
+SOUNDS
+=======
+
+================
+COLLISIONLAYERS
+================
+
+Background
+Exit
+Player, Tail, Wall, Apple, Blockade
+
+======
+RULES
+======
+
+[ > Player | Apple ] [Exit] -> [ > Player | No Apple ] [Exit No Blockade]
+[ Tail | Player ] -> [ > Tail | Player ]
+[ stationary Tail | moving Tail ] -> [ > Tail | moving Tail ]
+
+==============
+WINCONDITIONS
+==============
+
+No Apple
+All Player on Exit
+
+=======
+LEVELS
+=======
+
+#########
+#TTP.O.&#
+#########
+
+########
+#......#
+#......#
+#....O.#
+#..P...#
+#.TT...#
+#TT...&#
+########
+
+############
+#..........#
+#..P.......#
+#..T..O....#
+#..T.......#
+#.TT.......#
+#TT.......&#
+############
+
+###########
+#........X#
+#...t.t...#
+#....O....#
+#..t...t..#
+#...ttt...#
+#P........#
+###########
+
+message Koniec demka.
+message Dzięki za pełzanie :>
+
+(v1 2024.12.11)
