@@ -21,7 +21,12 @@ Tail
 blue
 
 Apple
-red
+red black
+..1..
+.000.
+00000
+00000
+.000.
 
 Exit
 yellow
@@ -107,4 +112,4 @@ LEVELS
 message Koniec demka.
 message Dzięki za pełzanie :>
 
-(v1 2024.12.11)
+(v2 2025.01.15)
