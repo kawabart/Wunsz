@@ -15,7 +15,7 @@ Wall
 brown
 
 Player
-black red
+black yellow
 00000
 00000
 01010
@@ -122,4 +122,4 @@ LEVELS
 message Koniec demka.
 message Dzięki za pełzanie :>
 
-(v2 2025.01.18)
+(v3 2025.01.18)
