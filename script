@@ -15,10 +15,20 @@ Wall
 brown
 
 Player
-black
+black red
+00000
+00000
+01010
+00000
+00000
 
 Tail
-blue
+blue lightgreen
+00011
+10001
+11000
+10001
+00011
 
 Apple
 red black
@@ -112,4 +122,4 @@ LEVELS
 message Koniec demka.
 message Dzięki za pełzanie :>
 
-(v2 2025.01.15)
+(v2 2025.01.18)
