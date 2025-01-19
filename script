@@ -9,7 +9,12 @@ OBJECTS
 ========
 
 Background
-green
+green #4a941c
+00000
+00010
+00000
+01000
+00001
 
 Wall
 brown
@@ -122,4 +127,4 @@ LEVELS
 message Koniec demka.
 message Dzięki za pełzanie :>
 
-(v3 2025.01.18)
+(v3 2025.01.19)
