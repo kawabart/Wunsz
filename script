@@ -44,10 +44,20 @@ red black
 .000.
 
 Exit
-yellow
+yellow lightgreen green #2e5c12
+.333.
+33133
+31213
+33133
+.333.
 
 Blockade
-darkblue
+#261703 darkbrown
+.000.
+01010
+00100
+01010
+.000.
 
 =======
 LEGEND
@@ -127,4 +137,4 @@ LEVELS
 message Koniec demka.
 message Dzięki za pełzanie :>
 
-(v3 2025.01.19)
+(v4 2025.01.19)
