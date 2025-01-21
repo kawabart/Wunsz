@@ -1,6 +1,6 @@
 title Wunsz
 author OmumbOrOmbOngO
-homepage www.puzzlescript.net
+homepage https://kawabart.itch.io/wunsz
 
 verbose_logging
 
@@ -137,4 +137,4 @@ LEVELS
 message Koniec demka.
 message Dzięki za pełzanie :>
 
-(v4 2025.01.20)
+(v4 2025.01.21)
