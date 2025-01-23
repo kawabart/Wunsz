@@ -96,7 +96,6 @@ RULES
 WINCONDITIONS
 ==============
 
-No Apple
 All Player on Exit
 
 =======
@@ -137,4 +136,4 @@ LEVELS
 message Koniec demka.
 message Dzięki za pełzanie :>
 
-(v4 2025.01.21)
+(v0.2.1)
