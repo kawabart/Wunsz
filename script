@@ -1,4 +1,4 @@
-title Wunsz
+title Wunsz 0.3.0
 author OmumbOrOmbOngO
 homepage https://kawabart.itch.io/wunsz
 
@@ -90,13 +90,18 @@ RULES
 
 [ > Player | Apple ] [Exit] -> [ > Player | No Apple ] [Exit No Blockade]
 [ Tail | Player ] -> [ > Tail | Player ]
-[ stationary Tail | moving Tail ] -> [ > Tail | moving Tail ]
+[ Player Exit ] -> [ Exit ]
+
+[ stationary Tail | moving Tail ] -> [ > Tail | moving Tail ] again
++ [ Tail | Tail Exit ] -> [ > Tail | Exit ] again
++ [ Tail Exit ] -> [ Exit ]
 
 ==============
 WINCONDITIONS
 ==============
 
-All Player on Exit
+No Player
+No Tail on Exit
 
 =======
 LEVELS
@@ -135,5 +140,3 @@ LEVELS
 
 message Koniec demka.
 message Dzięki za pełzanie :>
-
-(v0.2.1)
