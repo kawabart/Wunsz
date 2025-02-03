@@ -72,6 +72,7 @@ O = Apple
 B = Blockade
 X = Exit
 & = Blockade and Exit
+Q = Player and Exit
 
 =======
 SOUNDS
@@ -149,6 +150,14 @@ LEVELS
 #...ttt...#
 #P........#
 ###########
+
+#######
+#TTTTT#
+#TTTTT#
+#TTQTT#
+#TTTTT#
+#TTTTT#
+#######
 
 message Koniec demka.
 message Dzięki za pełzanie :>
