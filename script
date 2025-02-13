@@ -78,6 +78,9 @@ Q = Player and Exit
 SOUNDS
 =======
 
+SFX2 42814708 ( level completion animation )
+SFX3 11296707 ( eating )
+
 ================
 COLLISIONLAYERS
 ================
@@ -90,12 +93,12 @@ Player, Tail, Wall, Apple, Blockade
 RULES
 ======
 
-[ > Player | Apple ] [Exit] -> [ > Player | No Apple ] [Exit No Blockade]
+[ > Player | Apple ] [Exit] -> [ > Player | No Apple ] [Exit No Blockade] SFX3
 [ Tail | Player ] -> [ > Tail | Player ]
 [ Player Exit ] -> [ Exit ]
 
 [ stationary Tail | moving Tail ] -> [ > Tail | moving Tail ] again
-+ [ Tail | Tail Exit ] -> [ > Tail | Exit ] again
++ [ Tail | Tail Exit ] -> [ > Tail | Exit ] again SFX2
 + [ Tail Exit ] -> [ Exit ]
 
 ==============
