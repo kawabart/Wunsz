@@ -60,6 +60,9 @@ Blockade
 01010
 .000.
 
+CannotMoveHorizontally
+transparent
+
 =======
 LEGEND
 =======
@@ -74,17 +77,21 @@ X = Exit
 & = Blockade and Exit
 Q = Player and Exit
 
+Obstacle = Tail or Wall or Blockade
+
 =======
 SOUNDS
 =======
 
 SFX2 42814708 ( level completion animation )
 SFX3 11296707 ( eating )
+SFX4 70561304 ( player stuck )
 
 ================
 COLLISIONLAYERS
 ================
 
+CannotMoveHorizontally
 Background
 Exit
 Player, Tail, Wall, Apple, Blockade
@@ -100,6 +107,11 @@ RULES
 [ stationary Tail | moving Tail ] -> [ > Tail | moving Tail ] again
 + [ Tail | Tail Exit ] -> [ > Tail | Exit ] again SFX2
 + [ Tail Exit ] -> [ Exit ]
+
+( checking if the player is stuck )
+late horizontal [ Obstacle | Player No Exit | Obstacle ] -> [ Obstacle | Player CannotMoveHorizontally | Obstacle ]
+late vertical [ Obstacle | Player CannotMoveHorizontally | Obstacle ] -> SFX4
+[ CannotMoveHorizontally ] -> [ ]
 
 ==============
 WINCONDITIONS
