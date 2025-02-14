@@ -83,8 +83,8 @@ Obstacle = Tail or Wall or Blockade
 SOUNDS
 =======
 
-SFX2 42814708 ( level completion animation )
-SFX3 11296707 ( eating )
+Tail destroy 42814708 ( level completion animation )
+Apple destroy 11296707 ( eating )
 SFX4 70561304 ( player stuck )
 
 ================
@@ -100,12 +100,14 @@ Player, Tail, Wall, Apple, Blockade
 RULES
 ======
 
-[ > Player | Apple ] [Exit] -> [ > Player | No Apple ] [Exit No Blockade] SFX3
+( player eats apple -> unlock exit )
+[ > Player | Apple ] [ Exit ] -> [ > Player | No Apple ] [ Exit No Blockade ]
+
 [ Tail | Player ] -> [ > Tail | Player ]
 [ Player Exit ] -> [ Exit ]
 
 [ stationary Tail | moving Tail ] -> [ > Tail | moving Tail ] again
-+ [ Tail | Tail Exit ] -> [ > Tail | Exit ] again SFX2
++ [ Tail | Tail Exit ] -> [ > Tail | Exit ] again
 + [ Tail Exit ] -> [ Exit ]
 
 ( checking if the player is stuck )
