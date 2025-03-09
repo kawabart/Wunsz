@@ -1,4 +1,4 @@
-title Wunsz 0.4.2
+title Wunsz 0.5.0
 author OmumbOrOmbOngO
 homepage https://kawabart.itch.io/wunsz
 noaction
@@ -86,6 +86,7 @@ SOUNDS
 Tail destroy 42814708 ( level completion animation )
 Apple destroy 11296707 ( eating )
 SFX4 70561304 ( player stuck )
+Undo 20326908
 
 ================
 COLLISIONLAYERS
